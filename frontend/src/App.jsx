@@ -26,7 +26,7 @@ function App() {
     const token = localStorage.getItem("token"); // get JWT token
     if (!token) return;
 
-    fetch("http://localhost:5000/api/todos", {
+    fetch("https://todo-backend-b03m.onrender.com/api/todos", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ function App() {
     const token = localStorage.getItem("token"); // get JWT token
     if (!token) return;
 
-    fetch("http://localhost:5000/api/todos", {
+    fetch("https://todo-backend-b03m.onrender.com/api/todos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -89,7 +89,7 @@ function App() {
     const token = localStorage.getItem("token"); // get JWT token
     if (!token) return;
 
-    fetch(`http://localhost:5000/api/todos/${id}`, {
+    fetch(`https://todo-backend-b03m.onrender.com/api/todos/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -107,7 +107,7 @@ function App() {
     const token = localStorage.getItem("token"); // get JWT token
     if (!token) return;
 
-    fetch("http://localhost:5000/api/todos", {
+    fetch("https://todo-backend-b03m.onrender.com/api/todos", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -123,7 +123,7 @@ function App() {
     const token = localStorage.getItem("token"); // get JWT token
     if (!token) return;
 
-    fetch(`http://localhost:5000/api/todos/${id}`, {
+    fetch(`https://todo-backend-b03m.onrender.com/api/todos/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
